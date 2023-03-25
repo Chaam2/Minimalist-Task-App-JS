@@ -1,13 +1,19 @@
 # 노마드코더 바닐라 JS로 크롬 앱 만들기
 
-<a href="https://nomadcoders.co/javascript-for-beginners" _blank>🌐강의 페이지 바로가기</a>
+<a href="https://nomadcoders.co/javascript-for-beginners" target ="_blank">🌐 강의 페이지 바로가기</a>
 
-<a href = "https://chaam2.github.io/Momentum" _blank>👉완성 페이지 보러가기</a>
+<a href = "https://chaam2.github.io/Momentum" target ="_blank">👉 완성 페이지 보러가기</a>
 
-<del>grid로 레이아웃을 시도해봤는데, 각 요소들의 크기나 위치를 정하는게 너무 어렵다,,,부모요소도 크기가 없다보니 100%도 안먹고... 어디서부터 손대야할까...</del>
-grid로 레이아웃 설정하는데 성공했다!
+---
 
-- 이미지 넣기
+### To-do
+
+- ~~grid를 사용해서 레이아웃 정리하기~~
+- ~~이미지 넣기~~
+- 랜덤이미지 api로 불러오기
+  - ~~api key 숨기기~~
 - 폰트 설정하기
+- 리스트 간격 수정
 - 버튼 스타일 수정
 - 지역이름 한글로 번역
+- 점메추 모달 창 추가
