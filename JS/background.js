@@ -4,6 +4,6 @@ const chosenImg = images[Math.floor(Math.random()*images.length)]
 
 const imgTag = document.createElement('img')
 //imgTag.src = `img/${chosenImg}`
-imgTag.src = `https://source.unsplash.com/random/?cuteanimal`
+imgTag.src = `https://source.unsplash.com/random/?kitty`
 
 document.querySelector('#bg-img').appendChild(imgTag)
