@@ -8,29 +8,35 @@
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <div id="user">
+    <div id="login-container">
       <form id="login-form" class="hidden">
-        <input placeholder="이름을 알려주세요😃" required maxlength="10" />
-        <button>로그인</button>
+        <input placeholder="Enter your name" required maxlength="10" />
+        <button>Go</button>
       </form>
       <h1 id="greeting" class="hidden"></h1>
     </div>
+
     <div id="clock-container">
       <h2 id="clock">00:00:00</h2>
     </div>
+
     <form id="todo-form">
-      <input type="text" placeholder="할 일을 입력해 주세요!" required />
+      <input type="text" placeholder="+ Add to-do" required />
     </form>
+
     <ul id="todo-list"></ul>
+
     <div id="lunch">
       <span></span><br />
       <span></span>
     </div>
+
     <div id="weather">
-      <span class="city"></span>
       <span class="icon"></span>
+      <span class="city"></span>
       <span class="weather"></span>
     </div>
+
     <div id="bg-img"></div>
 
     <script src="JS/greetings.js"></script>

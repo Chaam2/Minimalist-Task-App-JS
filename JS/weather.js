@@ -21,7 +21,6 @@ function success(position){
     iconContainer.appendChild(iconImg)
   })
 
-
 }
 function error(){
   alert('위치 액세스를 허용하시면, 날씨를 알려드립니다😊')
