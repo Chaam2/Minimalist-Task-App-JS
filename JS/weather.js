@@ -3,15 +3,15 @@ navigator.geolocation.getCurrentPosition(success,error)
 function success(position){
   const lat = position.coords.latitude //위도
   const lon = position.coords.longitude //경도
-  const API_KEY = process.env.WEATHER_API_KEY
+  const API_KEY = '973002436b3c1db7f1816a1cb82114d9'
   const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
   fetch(URL)
   .then(res=>res.json())
   .then(data=>{
     const city = document.querySelector('.city')
     const weather = document.querySelector('.weather')
-    city.innerText = data.name
-    weather.innerText = data.main.temp.toFixed(0)
+    city.innerText = data.name+' /'
+    weather.innerText = data.main.temp.toFixed(0)+'℃'
    //아이콘 넣기
     const icon = data.weather[0].icon
     const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`
