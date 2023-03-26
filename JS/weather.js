@@ -3,7 +3,7 @@ navigator.geolocation.getCurrentPosition(success,error)
 function success(position){
   const lat = position.coords.latitude //위도
   const lon = position.coords.longitude //경도
-  const API_KEY = process.env.WEATHER_API_KEY
+  const API_KEY = ${{secrets.WEATHER_API_KEY}}
   const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
   fetch(URL)
   .then(res=>res.json())
