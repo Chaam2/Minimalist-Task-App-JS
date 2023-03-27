@@ -10,8 +10,8 @@ function success(position){
   .then(data=>{
     const city = document.querySelector('.city')
     const weather = document.querySelector('.weather')
-    city.innerText = data.name+' /'
-    weather.innerText = data.main.temp.toFixed(0)+'℃'
+    city.innerText = '/'+data.name
+    weather.innerText = data.main.temp.toFixed(0)+'°C'
    //아이콘 넣기
     const icon = data.weather[0].icon
     const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`

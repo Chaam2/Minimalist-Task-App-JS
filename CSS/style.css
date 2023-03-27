@@ -2,6 +2,7 @@
   display: none;
 }
 *{
+  font-family:"YD Gothic 500";
   box-sizing: border-box;
 }
 body{
@@ -21,14 +22,22 @@ body{
   grid-area: 1/1/2/9;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #login-form{
   height: 100%;
+}
+#login-form *{
+  font-family: "PerihelionCondBB-Italic",Helvetica;
+  font-size: 16px;
 }
 #login-form input{
   border: 0;
   padding: 16px;
   height: 100%;
+}
+#login-form input:focus{
+  outline: 0;
 }
 #login-form button{
   border: 0;
@@ -36,8 +45,10 @@ body{
   font-weight: bold;
 }
 #greeting{
-  font-size: 18px;
+  font-size: 24px;
   padding-left: 16px;
+  letter-spacing: 1px;
+  font-family: "PerihelionCondBB",Helvetica;
 }
 #weather{
   display: flex;
@@ -48,6 +59,13 @@ body{
   box-sizing: border-box;
   border-bottom: 1px solid #000;
   grid-area: 2/1/3/9;
+}
+#weather span{
+  font-family: "PerihelionCondBB-Italic",Helvetica;
+  font-size: 18px;
+}
+#weather .city{
+  color: rgba(153, 153, 153, 0.83);
 }
 #clock-container{
 height: 100%;
@@ -61,6 +79,7 @@ height: 100%;
   font-size: 18px;
     padding-right: 16px;
     text-align: right;
+    font-family: "PerihelionCondBB-Italic",Helvetica;
 }
 
 #bg-img{
@@ -85,6 +104,11 @@ margin: 0;
 padding: 0;
 overflow: auto;
 }
+#todo-list .list-title{
+  font-weight: bold;
+  background-color: rgb(115, 249, 78);
+  position: fixed;
+}
 #todo-list li button{
   border: 0;
   background-color: #00000000;
@@ -95,13 +119,15 @@ overflow: auto;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding: 8px 16px;
+  padding: 16px 16px;
   border-bottom: 1px solid #000;
 
   opacity: 1;
   transition: opacity 0.5s ease;
 }
-
+#todo-list li:nth-child(2){
+  margin-top: 49px;
+}
 
 #todo-form{
 grid-area: 10/6/11/9;
@@ -113,6 +139,9 @@ height: 100%;
   border: 0;
   width: 100%;
   height: 100%;
+}
+#todo-form input:focus{
+outline: 0;
 }
 #lunch{
   display: none;

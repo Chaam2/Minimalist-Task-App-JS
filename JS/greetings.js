@@ -7,7 +7,14 @@ const USERNAME_KEY="userName"
 
 function paintGreetings(username){
   greeting.classList.remove(HIDDNE_CLASSNAME);//greeting 노출
-  greeting.innerText=`안녕하세요, ${username}님🙌`;
+  const now = new Date().getHours()
+  if(now>=6 && now<=12){
+    greeting.innerText=`GOOD MORNING, ${username} :)`;
+  }else if(now>=13 && now<=18){
+    greeting.innerText=`Good afternoon, ${username} :)`;
+  }else{
+    greeting.innerText=`GOOD NIGHT, ${username} :)`;
+  }
 }
 
 function loginSubmit(event){
