@@ -39,7 +39,7 @@ function paintTodo(newTodoObj){
   span.innerText = newTodoObj.text
   const button = document.createElement('button')
   const btnImg = document.createElement('img')
-  btnImg.setAttribute('src','../img/cancel.png')
+  btnImg.setAttribute('src','img/cancel.png')
   button.appendChild(btnImg)
   //button.innerText="❌"
   button.addEventListener('click',deleteTodo)
