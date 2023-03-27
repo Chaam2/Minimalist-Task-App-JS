@@ -38,7 +38,10 @@ function paintTodo(newTodoObj){
   const span = document.createElement('span')//삭제 버튼도 넣을거니까 span태그 추가!
   span.innerText = newTodoObj.text
   const button = document.createElement('button')
-  button.innerText="❌"
+  const btnImg = document.createElement('img')
+  btnImg.setAttribute('src','../img/cancel.png')
+  button.appendChild(btnImg)
+  //button.innerText="❌"
   button.addEventListener('click',deleteTodo)
   
   li.appendChild(span)//<li><span></span></li>
@@ -47,9 +50,14 @@ function paintTodo(newTodoObj){
 }
 
 function deleteTodo(e){
-  const li = e.target.parentElement //이벤트가 발생한 버튼의 부모!
-  li.remove()//delete 아님 주의...
-  todos = todos.filter((todo)=>todo.id !== parseInt(li.id))
-  //todos배열에 선택된 li를 제외한 나머지를 새로운 배열로 리턴, **li.id는 string타입이므로 num변경해주기!
-  saveTodos() //로컬스토리지에 새로운 배열 저장
+  const li = e.target.closest('li') //이벤트가 발생한 버튼의 부모!
+  //버튼에 img를 넣으면서 이벤트 타겟이 li->button으로 변경됨.
+  //closest('li') =>현재 요소 또는 상위 요소 중에서 가장 가까운 li 요소를 찾는다!
+  li.style.opacity = '0'
+  setTimeout(()=>{
+    li.remove()//delete 아님 주의...
+    todos = todos.filter((todo)=>todo.id !== parseInt(li.id))
+    //todos배열에 선택된 li를 제외한 나머지를 새로운 배열로 리턴, **li.id는 string타입이므로 num변경해주기!
+    saveTodos() //로컬스토리지에 새로운 배열 저장
+  },500)
 }
