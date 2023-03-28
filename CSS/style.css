@@ -150,14 +150,14 @@ outline: 0;
 
 @media(max-width: 480px) {
   #bg-img{
-    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
   grid-area: 3/1/5/9;
   }
   #todo-list{
-    border-bottom: 1px solid #000;
-    grid-area: 5/1/10/9;
+    grid-area: 6/1/11/9;
   }
   #todo-form{
-    grid-area: 10/1/11/9;
+    grid-area: 5/1/6/9;
+    border-bottom: 1px solid #000;
   }
 }
