@@ -1,20 +1,22 @@
-# 노마드코더 바닐라 JS로 크롬 앱 만들기
+# 바닐라 JS로 To-Do List 프로젝트
 
-<a href="https://nomadcoders.co/javascript-for-beginners" target ="_blank">🌐 강의 페이지 바로가기</a>
+[🌐 강의 페이지 바로가기](https://nomadcoders.co/javascript-for-beginners)
 
-<a href = "https://chaam2.github.io/Momentum" target ="_blank">👉 완성 페이지 보러가기</a>
+[✏️ 정리 노트 보러가기](https://www.notion.so/JS-6a0fe3c2b130434bb6a72d3fa9f0f9d3)
+
+[👉 완성 페이지 보러가기](https://chaam2.github.io/Momentum)
 
 ---
 
-### To-do
+## 👀 Preview
 
-- ~~grid를 사용해서 레이아웃 정리하기~~
-- ~~이미지 넣기~~
-- ~~랜덤이미지 api로 불러오기~~
-  - ~~api key 숨기기~~
-- ~~폰트 설정하기~~
-- ~~리스트 간격 수정~~
-- ~~버튼 스타일 수정~~
-- 점메추 모달 창 추가
-- ~~시간대별로 greeting 문구 바꾸기~~
-- ~~모바일 반응형 그리드 설정 추가하기~~
+| <td width="80%">🖥 Desktop</td>                                                                                                          | <td width="20%">📱 Mobile</td>                                                                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| <td width="80%">![desktop](https://user-images.githubusercontent.com/126763111/229347367-15a6513b-2391-48b7-b17c-44009ad5b588.png)</td> | <td width="20%">![mobile](https://user-images.githubusercontent.com/126763111/229347524-1e5c7a78-ff06-470b-8f53-cdc273cbdbf2.png)</td> |
+
+---
+
+- Grid layout
+  ![layout](https://user-images.githubusercontent.com/126763111/229349830-778b59a1-bcee-47bd-8723-9efccfa05571.gif)
+- To-do list scroll
+  ![scroll](https://user-images.githubusercontent.com/126763111/229348718-f136596c-864e-489f-8461-d67030f7eae7.gif)
