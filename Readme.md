@@ -1,8 +1,7 @@
 # 바닐라 JS로 To-Do List 프로젝트
 
-| [👉 완성 페이지 보러가기](https://chaam2.github.io/Momentum) | [✏️ 정리 노트 보러가기](https://www.notion.so/JS-6a0fe3c2b130434bb6a72d3fa9f0f9d3) | [🌐 강의 페이지 바로가기](https://nomadcoders.co/javascript-for-beginners) |
+| [👉 완성 페이지 보러가기](https://chaam2.github.io/Minimalist-Task-App-JS) | [✏️ 정리 노트 보러가기](https://www.notion.so/JS-6a0fe3c2b130434bb6a72d3fa9f0f9d3) | [🌐 강의 페이지 바로가기](https://nomadcoders.co/javascript-for-beginners) |
 | --- | --- | --- |
-
 ---
 
 ## 👀 Preview
